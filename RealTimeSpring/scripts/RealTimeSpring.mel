@@ -1,0 +1,53 @@
+// Write by Soyoing in 20111219 ver1 - release
+global proc string[] getCurrentPlace(string $procName)
+{
+    string $rtn[];	
+    string $tokBufA[];
+	 string $s = `whatIs $procName`;
+
+    int $tokNumA = `tokenize $s ":" $tokBufA`;
+    string $drive = endString($tokBufA[1],1);
+    string $fullPath = $drive +":"+ $tokBufA[2];
+    
+	string $dir = dirname( $fullPath );
+	string $basename = basename($fullPath, ".mel");
+	$rtn[0] = $drive;
+	$rtn[1] = $dir;
+	$rtn[2] = $basename;
+	$rtn[3] = $fullPath;	
+	return $rtn;
+}
+
+global proc RealTimeSpring()//蠢传
+{
+    string $melfuncName         = "RealTimeSpring"; //蠢传
+    string $pythonModuleName    = "RealTimeSpring"; //蠢传
+    string $place[] = getCurrentPlace($melfuncName);
+	string $ToolRoot = $place[1];
+	
+    python("import sys,os");
+    python("_path = sys.path");
+    python("p=\""+$ToolRoot+"\"");
+    python("if not (p in _path):_path.append(p)");
+
+    // if clr
+    python("modulepth = (os.path.dirname(os.path.dirname(\""+$ToolRoot+"\"))) + \"/pyModule\"");
+    python("if not (modulepth in _path):_path.append(modulepth)");
+    python("from DotNet import Copier");
+    python("reload(Copier)");
+    python("dotnetmodulepth = modulepth+\"/DotNet\"");
+    python ("Copier.ClrDllCopier(modulepth)");
+    // endif clr
+
+    // if MXSController
+    python("modulepth = (os.path.dirname(os.path.dirname(\""+$ToolRoot+"\"))) + \"/pyModule\"");
+    python("if not (modulepth in _path):_path.append(modulepth)");
+    python("from MXSController import dllCopier");
+    python("reload(dllCopier)");
+    python ("dllCopier.PluginCopier(modulepth)");
+    // endif MXSController
+
+    python("try:\n    import "+$pythonModuleName+"\n    reload("+$pythonModuleName+")\nexcept:\n    "+$pythonModuleName+" = None");
+    python($pythonModuleName+"."+"RTSROWin(\""+$ToolRoot+"\")"); //蠢传 RTSROWin
+}
+RealTimeSpring; //蠢传

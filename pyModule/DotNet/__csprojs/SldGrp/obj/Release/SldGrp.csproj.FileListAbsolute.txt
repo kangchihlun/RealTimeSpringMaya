@@ -1,0 +1,12 @@
+D:\05Py\NMAAssetToolSet\Pipe12Tool_SkelTool\scripts\DotNet\__csprojs\SldGrp\bin\Release\SldGrp.dll
+D:\05Py\NMAAssetToolSet\Pipe12Tool_SkelTool\scripts\DotNet\__csprojs\SldGrp\bin\Release\SldGrp.pdb
+D:\05Py\NMAAssetToolSet\Pipe12Tool_SkelTool\scripts\DotNet\__csprojs\SldGrp\obj\Release\UserControl1.g.cs
+D:\05Py\NMAAssetToolSet\Pipe12Tool_SkelTool\scripts\DotNet\__csprojs\SldGrp\obj\Release\GeneratedInternalTypeHelper.g.cs
+D:\05Py\NMAAssetToolSet\Pipe12Tool_SkelTool\scripts\DotNet\__csprojs\SldGrp\obj\Release\SldGrp_MarkupCompile.cache
+D:\05Py\NMAAssetToolSet\Pipe12Tool_SkelTool\scripts\DotNet\__csprojs\SldGrp\obj\Release\SldGrp_MarkupCompile.lref
+D:\05Py\NMAAssetToolSet\Pipe12Tool_SkelTool\scripts\DotNet\__csprojs\SldGrp\obj\Release\UserControl1.baml
+D:\05Py\NMAAssetToolSet\Pipe12Tool_SkelTool\scripts\DotNet\__csprojs\SldGrp\obj\Release\SldGrp.g.resources
+D:\05Py\NMAAssetToolSet\Pipe12Tool_SkelTool\scripts\DotNet\__csprojs\SldGrp\obj\Release\SldGrp.Properties.Resources.resources
+D:\05Py\NMAAssetToolSet\Pipe12Tool_SkelTool\scripts\DotNet\__csprojs\SldGrp\obj\Release\SldGrp.csproj.GenerateResource.Cache
+D:\05Py\NMAAssetToolSet\Pipe12Tool_SkelTool\scripts\DotNet\__csprojs\SldGrp\obj\Release\SldGrp.dll
+D:\05Py\NMAAssetToolSet\Pipe12Tool_SkelTool\scripts\DotNet\__csprojs\SldGrp\obj\Release\SldGrp.pdb

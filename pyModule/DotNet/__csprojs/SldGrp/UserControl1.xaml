@@ -1,0 +1,26 @@
+﻿<UserControl x:Class="SldGrp.UserControl1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:c="clr-namespace:SldGrp" 
+             mc:Ignorable="d" 
+             d:DesignHeight="24" d:DesignWidth="180"
+             >
+    <UserControl.Resources>
+        <c:RoundingConverter x:Key="RoundingConverter" />
+    </UserControl.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="119*"></ColumnDefinition>
+            <ColumnDefinition Width="59*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Slider Name="sldValue" Grid.Column="0" Minimum="0" Maximum="100" VerticalAlignment="Center"  ValueChanged="sldValue_ValueChanged" />
+        <TextBox x:Name="txtSliderValue"  Grid.Column="1" IsEnabled="False"  Height="19" Canvas.Left="0" Canvas.Top="25" Margin="5" 
+                 Text="{Binding ElementName=sldValue, Path=Value, Converter={StaticResource RoundingConverter}}">
+            <TextBox.ToolTip>
+                fishy fish
+            </TextBox.ToolTip>
+        </TextBox>
+    </Grid>
+</UserControl>
