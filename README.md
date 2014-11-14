@@ -4,7 +4,7 @@ RealTimeSpringMaya
 Realtime Spring , a similar tool in 3ds max developed by Harrison Yu .
 
 How to Use:
-Drag the "RealTimeSpring.mel" into maya or make button of it.
+Drag the "script/RealTimeSpring.mel" into maya or make button of it.
 
 UI is written in .net ( the installer will automatically copy "clr.pyd"
 and "Python.Runtime.dll" into maya script folder)
