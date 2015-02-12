@@ -15,4 +15,4 @@ controller does , which evaluate python code each system tick no matter
 user or time changes any value .
 
 Note . this script system not been massively test . may cause problem
-during network render . please use your own risk .
+during network render . please use it at your own risk .
