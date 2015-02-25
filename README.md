@@ -1,5 +1,8 @@
 RealTimeSpringMaya
 ==================
+Video 
+http://youtu.be/7HuvE7aCEqU
+
 
 Realtime Spring , a similar tool in 3ds max developed by Harrison Yu .
 
@@ -18,10 +21,16 @@ UI is written in .net
   in project setting change the python version . i.e. PYTHON2_4
 )
 
-this script require the mll plug in the MXSController folder ( the
+This script require the mll plug in the MXSController folder ( the
 folder also contains source code ). the plug in simulate the max script
 controller does , which evaluate python code each system tick no matter
 user or time changes any value .
+
+Another good example of this node.
+http://youtu.be/fTnOzDko0TY
+
+I can set python expression directly on the wheel to make it point to the moving direction.
+
 
 Note . this script system not been massively test . may cause problem
 during network render . please use it at your own risk .
